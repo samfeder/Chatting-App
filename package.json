@@ -11,5 +11,10 @@
     "url": "git remote add origin https://github.com/samfeder/Chatting-App.git"
   },
   "author": "sam+andrew",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "1.0.x",
+    "mime": "~1.2.7",
+    "node-static": "^0.7.4"
+  }
 }
