@@ -8,5 +8,9 @@
     Chat.prototype.sendMessage = function(msg){
       chat.socket.emit('message', { text: msg})
     }
+
+    Chat.prototype.nicknameChangeRequest = function(val){
+      chat.socket.emit('nicknameChange', { newName: val})
+    }
   };
 }(this))
