@@ -1,0 +1,15 @@
+{
+  "name": "chatApp",
+  "version": "0.0.0",
+  "description": "A simple chatting app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/samfeder/Chatting-App.git"
+  },
+  "author": "sam+andrew",
+  "license": "ISC"
+}
