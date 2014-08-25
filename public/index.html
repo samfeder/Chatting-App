@@ -1,8 +1,30 @@
 <html>
 <head>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="javascript/chat.js"></script>
+  <script src="javascript/chat_ui.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    var socket = io();
+    $(function () {
+      var chat = new App.Chat(socket);
+      var chatUi = new App.ChatUI(chat);
+    });
+  </script>
+
 </head>
 <body>
-<p>Welcome to our chatting app</p>
+
+  <p>Welcome to our chatting app</p>
+
+  <span id="chat-body">
+    <ul id="chat-messages">
+    </ul>
+  </span>
+<form id="send-message">
+  <input type="text" id="chat-input">
+  <button>Send</button>
+</form>
+
 </body>
 </html>
